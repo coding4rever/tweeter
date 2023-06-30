@@ -5,9 +5,9 @@ $(document).ready(function() {
       $(".counter").text(remChars);
   
       if (remChars < 0) {
-        $('.counter').addClass("exceeded");
+        $('.counter').addClass("overlimit");
       } else {
-        $('.counter').removeClass("exceeded");
+        $('.counter').removeClass("overlimit");
       }
     });
   }); 

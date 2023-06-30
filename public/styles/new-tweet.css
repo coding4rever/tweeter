@@ -28,7 +28,6 @@
   #tweet-text::placeholder {
     font-family: 'Source Sans Pro', sans-serif;
     vertical-align: bottom;
-    font-weight: bold
   }
   
   .new-tweet output.counter {
@@ -37,4 +36,8 @@
     right: 0;
     font-size: 26px;
     color: gray;
+  }
+
+  .overlimit{
+    color: red !important;
   }
