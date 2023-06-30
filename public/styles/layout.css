@@ -26,6 +26,13 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+/*---Positioning the main part of the my app with a proper width---*/
+.main {
+  width: 90%;
+  margin: 0 auto;
+  background-color: inherit;
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
