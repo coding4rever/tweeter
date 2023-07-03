@@ -105,4 +105,4 @@ $(document).ready(function() {
 
   // "avatars": "https://i.imgur.com/73hZDYK.png",
 
-  // "avatars": "https://i.imgur.com/nlhLi3I.png",
+  // "avatars":  "https://i.imgur.com/nlhLi3I.png",
