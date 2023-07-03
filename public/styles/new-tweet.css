@@ -19,7 +19,7 @@
   textarea {
     margin-top: 10px;
     border: none; /* Remove the default border */
-    border-bottom: 3px solid grey; /* Add bottom border */
+    border-bottom: 3px solid black; /* Add bottom border */
     resize: none; /* Prevent resizing of the textarea */
     width: 100%;
     background-color: #f4f1ec;
