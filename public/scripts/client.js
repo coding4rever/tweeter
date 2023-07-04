@@ -5,9 +5,13 @@
  */
 
 $(document).ready(function() {
+    $('form').submit(submitForm)
+  loadTweets();
+});
     const renderTweets = function(tweets) {
       const $tweetSection = $("#the-tweet-section");
-      tweets.sort((a, b) => a.created_at - b.created_at);
+      //tweets.sort((a, b) => a.created_at - b.created_at);
+      $tweetSection.empty();
       for (const tweet of tweets) {
         const $tweet = createTweetElement(tweet);
         $tweetSection.append($tweet);
@@ -74,8 +78,9 @@ const showError = function(message) {
   };
 
   // To submit new tweet to on the web app, the trigger is when the tweet button is clicked
-  $('form').on ('submit', function(event){
+  //$('form').on ('submit', function(event){
     // to prevent the web app from automatically loading another url, default should be prevented.
+    const submitForm = function (event) {
     event.preventDefault();
     const info = $(this).serialize()
     const tweetText = $("#tweet-text").val();
@@ -102,25 +107,27 @@ const showError = function(message) {
       data: info
     })
     .then(response =>{
-      console.log(response)
-      hideError();
-      loadTweets();
-    })
-  })
+        console.log(response)
+        hideError();
+      })
+      .then(() => {
+        loadTweets();
+      })
+  }
   
   // to load new tweets and pass into defined key:value pair
   const loadTweets = function() {
     $.ajax({
       method: 'GET',
-      url: 'http://localhost:8080/tweets',
+      //url: 'http://localhost:8080/tweets',
+      url: '/tweets',
       dataType: 'json',
       success: function(tweets) {
         renderTweets(tweets);
       }
     });
   };
-  loadTweets();
-  })
+ 
 
 
 

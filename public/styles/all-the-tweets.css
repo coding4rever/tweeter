@@ -1,7 +1,8 @@
 .the-tweets-container {
     background-color: #FFFFFF;
     border: 3px solid grey;
-    width: 90%;
+    /* width: 90%; */
+    width: 100%;
     margin: 20px auto;
   }
 
@@ -67,4 +68,17 @@
   
   .the-tweets-container footer .tweet-icons i:hover {
     color: orange;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    /* Styles for screens with a minimum width of 1024px and above */
+  
+    .the-tweets-container {
+      width: 100%;
+      margin: 20px auto;
+    }
+  
+    .group-2 {
+      margin-right: 2em;
+    }
   }
