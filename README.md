@@ -2,7 +2,7 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+This app implements features similar to twitter app
 
 ## Getting Started
 
@@ -16,3 +16,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+!["Screenshot 1"](https://github.com/coding4rever/tinyapp/blob/main/docs/route1.png?raw=true)
+!["Screenshot 2"](https://github.com/coding4rever/tinyapp/blob/main/docs/route2.png?raw=true)
+
